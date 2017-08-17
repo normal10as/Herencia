@@ -25,9 +25,11 @@
         End Set
     End Property
 
-    Public ReadOnly Property Sueldo As Single
-        Get
-            Return 0
-        End Get
-    End Property
+    Public Overridable Function calcularPago() As Single
+        Return 0
+    End Function
+
+    Public Overrides Function ToString() As String
+        Return nombre
+    End Function
 End Class

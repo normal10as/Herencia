@@ -1,4 +1,4 @@
-﻿Imports ClassLibrary1
+﻿Imports Entidades
 
 Module EmpleadoTest
 
@@ -9,7 +9,8 @@ Module EmpleadoTest
 
         Console.WriteLine("Nombre: " & empleado1.nombre)
         Console.WriteLine("Cargo: " & empleado1.cargo)
-
+        Console.WriteLine("Sueldo: " & empleado1.calcularPago())
+        Console.WriteLine("toString: " & empleado1.ToString)
     End Sub
 
 End Module

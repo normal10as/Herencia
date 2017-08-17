@@ -5,7 +5,7 @@
     Private _costoHora As Single
 
     Sub New()
-        MyBase.New
+        MyBase.New()
         _horasTrabajadas = 0
         _costoHora = 0
     End Sub
@@ -28,13 +28,11 @@
         End Set
     End Property
 
-    Public ReadOnly Property Honorarios As Single
-        Get
-            Return calcularhonorarios()
-        End Get
-    End Property
-
-    Private Function calcularhonorarios() As Single
+    Public Overrides Function calcularPago() As Single
         Return costoHora * horasTrabajadas
+    End Function
+
+    Public Overrides Function ToString() As String
+        Return MyBase.ToString & " (Profesional)"
     End Function
 End Class
