@@ -107,11 +107,5 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Entidades.vbproj">
-      <Project>{54ee3185-664f-448a-a987-6438a6114940}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
